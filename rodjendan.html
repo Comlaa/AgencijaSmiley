@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/rodjendan.css">
+    <title>ROĐENDANSKI PAKETI | Agencija Smiley </title>
+</head>
+<body>
+    <header><h1>ROĐENDANSKI PAKETI</h1></header>
+    <img class="baloni" src="images/baloni1.png" alt="">
+    <img class="baloni1" src="images/baloni1.png" alt="">
+    <section id="Paketi">
+       <img class="Slajd" src="images/osnovna ponuda.png" style="width:100%">
+       <img class="Slajd" src="images/ponuda 2.png" style="width:100%">
+       <img class="Slajd" src="images/ponuda 3.png" style="width:100%">
+       <img class="Slajd" src="images/ponuda 4.png" style="width:100%">
+
+       <button class="nazad" onclick="Promijeni(-1)">&#10094;</button>
+       <button class="naprijed" onclick="Promijeni(1)">&#10095;</button>
+    </section>
+
+    <h2 class="Rezervacije" style="margin-top:8%">Rezervacije</h2>
+    <section id="RezervacijaID">
+        <div id="LijevaStrana">
+            <h2>Kontaktirajte nas</h2><br><br>
+            <h4>Telefon: +387 61 409 770</h4> <br>
+            <a href="https://www.facebook.com/agencijaSmiley/"><h4><i style="padding-right:3%" class="fab fa-facebook-square"></i>Agencija Smiley</h4></a><br>
+            <h4><i style="padding-right:3%" class="fas fa-envelope"></i>agencijasmiley@gmail.com</h4></a>
+        </div>
+        <div id="DesnaStrana">
+            <form action="https://getform.io/f/9aa06ede-7b78-45d3-892c-ff6ee8cd4257" method="POST" id="form">
+                <input type="text" name="name" placeholder="Unesite ime i prezime" data-parsley-trigger="change" required="">
+                <input type="email" placeholder="Unesite email" name="email" required="">
+                <input type="telefon" placeholder="Unesite broj telefona" name="telefon" required="">
+                <select name="paketi">
+                    <option value="Odaberite Paket">Odaberite ponudu</option>
+                    <option value="osnovnaPonuda">Osnovna ponuda</option>
+                    <option value="Ponuda2">Ponuda 2</option>
+                    <option value="ponuda3">Ponuda 3</option>
+                    <option value="ponuda4">Ponuda 4</option>
+                  </select>
+                <textarea type="Poruka" name="Poruka" placeholder="Napomena..." required=""></textarea>
+                <button type="submit" class="Posalji">Pošalji</button>
+            </form>
+        </div>
+        
+    </section>
+    
+
+</body>
+
+<script>
+    var SlikaIndeks = 1;
+    PokaziSliku(SlikaIndeks);
+
+    function Promijeni(n) {
+        PokaziSliku(SlikaIndeks += n);
+    }   
+
+    function PokaziSliku(n) {
+        var i;
+        var x = document.getElementsByClassName("Slajd");
+        if (n > x.length) {SlikaIndeks = 1}
+        if (n < 1) {SlikaIndeks = x.length}
+        for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+        x[SlikaIndeks-1].style.display = "block";  
+    }
+</script>
+</html>

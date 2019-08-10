@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <title>Agencija Smiley</title>
+</head>
+<body id="Body">
+    <header id="Pocetna">
+        <img src="images/smiley.png" alt="smiley logo">
+        <div id="tekst">
+            <h1> Agencija Smiley </h1>
+            <h5 id="TekstPocetak">Kvalitet nikada nije slučajnost, on je uvijek rezultat ozbiljnih namjera, iskrenog truda, inteligentnog vođenja i vještog djelovanja. On predstavlja mudar izbor između mnogih alternativa.</h5>
+        </div>
+        <nav>
+            <a id="IzbornikDugme">☰</a>
+            <div id="navbar">
+                <a class="IzbornikStavka" href="#Kontakt">KONTAKT</a>
+                <a class="IzbornikStavka" href="rodjendan.html">ROĐENDANI</a>
+                <a class="IzbornikStavka" data-scroll href="#Ponuda">PONUDA</a>
+                <a class="IzbornikStavka" href="#oNama">O NAMA</a>
+            </div>
+        </nav>
+    </header>
+    <section id="Ponuda">
+        <h3> NAŠA PONUDA </h3>
+        <div id="grid">
+            <div class="linija">
+                <div class="krug"> <i class="fas fa-child"></i> </div>
+                <h4>PRODUŽENI BORAVAK</h4>
+                <p class="SkraceniTekst">Nudimo  produženi  boravak za djecu  školskog uzrasta od I-IV razreda.</p>
+                <p class="ProcitajVise" data-modal-target="#modal1"> Pročitaj više </p>
+            </div>
+            <div class="linija" id="PVRadionice">
+                <div class="krug"> <i class="fas fa-book"></i> </div>
+                <h4>RADIONICE</h4>
+                <p class="SkraceniTekst" >Edukativno-kreativne radionice u popodnevnim terminima</p>
+                <p class="ProcitajVise" data-modal-target="#modal2"> Pročitaj više </p>
+            </div>
+            <div>
+                <div class="krug"> <i class="fas fa-birthday-cake"></i> </div>
+                <h4>ROĐENDANI</h4>
+                <p class="SkraceniTekst">Nudimo  neobične proslave rođendane i nezaboravne party-e</p>
+                <p class="ProcitajVise" data-modal-target="#modal3"> Pročitaj više </p>
+            </div>    
+        </div>
+    </section>
+
+    <section id="NovaPonuda">
+        <h3> NOVO U PONUDI! </h3>
+        <h3>produženi boravak za djecu uzrasta od 2 do 5 godina</h3>
+            <div class="ponuda2"> 
+                <p class="TekstPonuda2">U sigurnom i stimulativnom ambijentu nudimo produženi boravak djece predškolskog uzrasta. Tim koji će opravdati vaše povjerenje vođen je dugogodišnjim iskustvom i mladim obrazovanim osobljem. Cjelokupan rad usmjeren je na pravilan rast i razvoj, poštivanje i uvažavanje individualnih potreba. Sve aktivnosti su prilagođene uzrastu i interesovanjima djece.</p> 
+                <a href="https://urlzs.com/SwS75"> <p class="PrijaviteSe"> Prijavite se </p> </a>
+            </div>
+            <div> <img class="slikaGrid2" src="images/NovaPonuda.jpg" alt="NovaPonuda slika"></div>
+    </section>
+    
+    <section id="oNama">
+        <h3>Agencija Smiley je tvrtka za intelektualne usluge. Nudimo produženi boravak za djecu školskog i predškolskog  uzrasta, edukativno-kreativne radionice, organizovane proslave rođendana i tematske party zabave!</h3>
+        <h4 class="NasTimKLASA">NAŠ TIM</h4>
+        <div class=WrapperSlike>
+            <div class="container"><img src="images/Suada Mlaco.jpg" alt="avatar" class="slike" style="width:100%"> <div class="middle"> <div class="text">Suada Mlačo <br>mr. predškolskog odgoja i obrazovanja</div></div></div>
+            <div class="container"><img src="images/Alma Smajic.jpg" alt="avatar" class="slike" style="width:100%"> <div class="middle"> <div class="text">Alma Smajić <br>mr. pedagogije i psihologije</div></div></div>
+            <div class="container"><img src="images/Sadeta Bukva.jpg" alt="avatar" class="slike" style="width:100%"> <div class="middle"> <div class="text">Sadeta Bukva <br>prof. razredne nastave</div></div></div>
+            <div class="container"><img src="images/Belma Selmanovic.jpg" alt="avatar" class="slike" style="width:100%"> <div class="middle"> <div class="text">Belma Kamarić</div></div></div>
+            <div class="container"><img src="images/Almina Vatres.jpg" alt="avatar" class="slike" style="width:100%"> <div class="middle"> <div class="text">Almina Vatreš Mamleđija <br>mr. pedagogije</div></div></div>
+            <div class="container"><img src="images/Fahrija Karavdic.jpg" alt="avatar" class="slike" style="width:100%"> <div class="middle"> <div class="text">Fahrija Karavdić</div></div></div>
+        </div>
+    </section>
+
+    <section id="Kontakt">
+        <h1>KONTAKT</h1>
+        <div id="gridKontakt">
+            <div>
+                <div class="krug1"> <i class="fas fa-map-marker-alt"></i></div>
+                <div class="tekst"> Delahmetovića 10</div>
+            </div>
+            <div>
+                <div class="krug1"> <i class="fas fa-envelope"></i></div>
+                <div class="tekst2"> agencijasmiley@gmail.com </div> 
+            </div>
+            <div>
+                <div class="krug1"> <i class="fas fa-phone"></i> </div>
+                <div class="tekst"> +387 61 409 770</div>
+            </div>    
+        </div>
+        <div> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717.6268916846034!2d18.18013450199162!3d43.9902322395514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475f2e2db88d34c9%3A0xc3f0a0ecaef032da!2sDelahmetovi%C4%87a%2C+Visoko!5e0!3m2!1shr!2sba!4v1563306201856!5m2!1shr!2sba" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+         <form action="https://getform.io/f/a5d6ba8f-0dbb-4e05-a63f-e6ba7fed4b08" method="POST" id="forma">
+                <h2>Kontaktiraje nas putem maila</h2>
+                <input type="text" name="name" placeholder="Unesite ime i prezime" data-parsley-trigger="change" required="">
+                <input type="email" placeholder="Unesite email" name="email" required="">
+                <input type="telefon" placeholder="Unesite broj telefona" name="telefon" required="">
+
+            </div class="odmakni">
+                <textarea type="Poruka" name="Poruka" placeholder="Unesite vasu poruku..." required=""></textarea>
+            </div>
+            <button type="submit" class="Posalji">Pošalji</button>
+        </form>
+    </section>
+
+    <footer><p>&copy; Agencija Smiley 2019 <p></footer>
+    <div class="modal" id="modal1">
+        <div class="modal-header">
+            <div class="title">PRODUŽENI BORAVAK</div>
+            <button data-close-button class="close-button"> &times; </button>
+        </div>
+        <div class="modal-body" style="text-align:justify" style="text-justify:auto">
+            Organizovani  produženi  boravak uz stručni nadzor rješavanja školskih zadaća, pomoć i podršku u učenju, kreativno osmišljeno  slobodno vrijeme. 
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="modal" id="modal2">
+            <div class="modal-header">
+                <div class="title">RADIONICE</div>
+                <button data-close-button class="close-button"> &times; </button>
+            </div>
+            <div class="modal-body" style="text-align:justify" style="text-justify:auto">
+                Realizujemo radionice za djecu uzrasta od 3-6 godina namijenjene razvoju motorike, govora, pažnje i koncetrancije. Nudimo Art Craft radionice kojima razvijamo kreativnost, strpljenje i pažnju. U skladu sa zahtjevima i potrebama roditelja organizujemo radionice i za djecu školskog uzrasta: radionice čitanja i pisanja, pisanjem do kritičkog mišljenja i sl.
+            </div>
+        </div>
+        <div id="overlay"></div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-header">
+            <div class="title">ROĐENDANI</div>
+            <button data-close-button class="close-button"> &times; </button>
+        </div>
+        <div class="modal-body" style="text-align:justify" style="text-justify:auto">
+            Proslave rođendana  bez roditelja!  Zabavne takmičarske igre koje osmišljavaju stručne animatorice ovisno o uzrastu djece. Mnogo smijeha , igre i zabave! 
+            Pošaljite upit za željeni datum i vrijeme, odaberite ponudu i pozivnice koje želite a za sve ostalo će se pobrinuti naš rođendanski tim :)
+            <a href="rodjendan.html"><p class="Rođendani" style="text-align: center"> rođendanski paketi </p></a>
+         </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+<script src="js/script.js"></script>
+</html>
