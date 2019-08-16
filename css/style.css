@@ -7,7 +7,7 @@
 }
 #Body{
     font-family: 'Roboto Slab', serif;
-    height:100vh;
+    height:100%;
 }
 img{
     max-width: 40%;
@@ -16,8 +16,8 @@ img{
 }
 #Pocetna{
     background-image: url(../images/poz.jpg);
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 80%;
     background-size:cover;
 }
 #navbar{
@@ -325,25 +325,20 @@ a{
 }
 
 
-/* ------------------------------------------------------------------------------------------------------ */
+
 /* ZA MOBILNE UREĐAJE */
 @media screen and (max-width: 800px)
 {
-    #Body{
-        font-family: 'Roboto Slab', serif;
-        height:100vh;
-    }
     img{
         max-width: 100%;
-        height: 23%;
         position: relative;
         left:50%;
     }
+    .LOGO{
+        width: 43%;
+    }
     #Pocetna{
-        background-image: url(../images/poz.jpg);
-        width: 100vw;
-        height: 70vh;
-        background-size:cover;
+        height: 70%;
     }
     #navbar{
         max-height: 0px;
@@ -355,76 +350,27 @@ a{
         right:54%;
     }
     .IzbornikStavka{
-        padding:4px;
         display:block;
     }
     #IzbornikDugme{
         display:unset;
         font-size:30px;
     }
-    #navbar a:hover{
-        Border-bottom: 2px solid #edae38;
-    }
     nav{
-        position: absolute;
         top:2%;
         left:2%;
     }
     #tekst{
-        text-align: center;
-        padding-top:7%; 
         font-size:115%;
-        color:white;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-    #tekst h1{
-        text-decoration: underline dashed #edae38;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        padding-bottom:1%;
-        font-size:300%;
-    }
-    #Ponuda{
-        background-color: #302f2f;
-        padding: 3% 0 3% 0;
-        text-align: center;
-        color:white;
-    }
-    #Ponuda h3{
-        padding-bottom:3%;
+        margin: 2% 2% 5% 2%;
     }
     #grid, #gridKontakt{
         display: block;
     }
-    .SkraceniTekst{
-        padding-top:2%;
-    }
-    .krug, .krug1 {
-        height: 60px;
-        width: 60px;
-        padding: 15px;
-        text-align: center; 
-        border-radius: 50%;
-        display: inline-block;
-        color:#302f2f;
-        font-size:3.1em;
-        background-color:#edae38;
-        margin-bottom: 2%;
-    }
     .ProcitajVise{
         margin-top:6%;
-        padding:5px;
         width:40%;
         margin-left:28%;
-        border: 1px solid white;
-        margin-bottom:8%;
-    }
-    a{
-        text-decoration: none;
-        color:white;
-    }
-    .ProcitajVise:hover{
-        background-color:#edae38;
-        color:#302f2f;
     }
     .linija{
         border-right:none;
@@ -432,9 +378,7 @@ a{
         margin:0 10% 3% 10%;
     }
     #NovaPonuda{
-        background-color:#edae38;
-        height:70%;
-        text-align: center;
+        height:63%;
         padding: 5% 0 3% 0;
     }
     #NovaPonuda h3{
@@ -445,7 +389,6 @@ a{
         float:none;
         width:80%;
         margin:9% 5% 5% 10%;
-        font-size:140%;
     }
     .TekstPonuda2{
         font-size:15px;
@@ -454,14 +397,8 @@ a{
         display:none;
     }
     .PrijaviteSe, .Rođendani{
-        margin-top:10%;
-        padding:5px;
         width:50%;
         margin-left:27%;
-        border: 1px solid black;
-        margin-bottom:8%;
-        color:black;
-        font-weight: bold;
         position: relative;
         right:5%;
         font-size:15px;
@@ -471,18 +408,8 @@ a{
         position: relative;
         right:14%;
     }
-    .PrijaviteSe:hover, .Rođendani:hover
-    {
-        background-color: #302f2f;
-        color:white;
-        border: 1px solid white;
-    }
     #oNama{
-        background-color:#302f2f;
-        height:130%;
-        color:white;
-        text-align: center;
-        padding: 3% 0 3% 0;
+        height:122%;
     }
     #oNama h3{
         padding:5% 7% 10% 7%;
@@ -492,7 +419,6 @@ a{
     }
     .NasTimKLASA{
         margin:4% 15% 2% 15%;
-        border-bottom: 2px solid wheat;
     }
     .WrapperSlike{
         display: grid;
@@ -500,93 +426,39 @@ a{
         margin: 2% 1% 0 1%;
     }
     .container {
-        position: relative;
         width: 95%;
         padding:5px;
         right:50%;
     }
-    .slike{
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-    }
     .middle {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
         top: 28%;
         left:100%;
-        transform: translate(-50%, -23%);
       }
-      .container:hover .slike {
-        opacity: 0.3;
-      }
-      .container:hover .middle {
-        opacity: 1;
-      }
-      .text {
-        background-color:#edae38;
-        color: black;
-        font-size: 100%;
-        padding: 15px 32px;
-      }
-    
       #Kontakt
       {
-        background-color:#edae38;
         height: 233%;
-        box-sizing: border-box;
       }
       #Kontakt h1{
-        text-align: center;
         padding: 10% 0 4% 0;
         font-size:155%;
       }
       #forma{
           padding:3% 0 0 0%;
-          margin:3% 15% 0 15%;
       }
       input{
-          display:inline;
-          padding: 10px;
           width: 95%;
-          background-color:#302f2f;
-          color:white;
-          border: 2px solid black;
           margin-bottom: 1%;
       }
       textarea{
-          display:block;
-          background-color:#302f2f;
-          border: 2px solid black;
           width: 99%;
           margin-bottom:2%;
           padding: 10px 0 30px 10px;
-          color:white;
-      }
-      ::placeholder{
-          color:lightgray;
       }
       .Posalji{
           width:30%;
-          margin-left:35%;
-          background-color:wheat;
-          padding:6px;
-          margin-top:2%;
-          border: 2px solid black;
-      }
-      .Posalji:hover{
-          background-color:#302f2f;
-          color:white;
-      }
-      .odmakni{
-          margin-top:8px;
+          margin:2% 0 5% 35%;
       }
       .krug1{
-        border:1px solid #302f2f;
         position: relative;
         margin-left:30%;
       }
@@ -604,13 +476,11 @@ a{
           right: 50%;
       }
       #gridKontakt{
-        text-align: center;
         margin: 0 25% 0 0;
       }
       #forma h2{
           margin:2% 0 10% 0;
           font-size:24px;
-          border-bottom: 3px solid black;
           width: 100%;
           text-align:center;
       }

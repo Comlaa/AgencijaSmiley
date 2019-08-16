@@ -11,7 +11,7 @@ a:hover{
 }
 body{
     font-family: 'Roboto Slab', serif;
-    height:100vh;
+    height:100%;
     background-color: #302f2f;
     color:white;
 }
@@ -54,18 +54,20 @@ header, .Rezervacije{
 }
 #RezervacijaID{
     position: relative;
+    width:100%;
     left:20%;
+    box-sizing: border-box;
 }
 #LijevaStrana{
-    float: left;
-    width: 15%;
+    position: absolute;
+    width: 20%;
     border-right: 1px solid #edae38;
     height:250px;
 }
 #DesnaStrana{
-    float:left;
-    width: 70%;
-    margin-left:5%;
+    position: absolute;
+    width: 65%;
+    right:10%;
 }
 input, select{
     display:block;
@@ -99,83 +101,69 @@ textarea{
 /* ZA MOBILNE UREĐAJE */
 
 @media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+    }
     header, .Rezervacije{
-        text-align: center;
-        margin:5% 25% 6% 25%;
-        letter-spacing: 1rem;
-        Border-bottom: 2px solid #edae38;
+        margin:5% 5% 2% 5%;
+    }
+    .Rezervacije{
+        margin: 2% 10% 2% 9%;
+    }
+    header h1{
+        font-size:22px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
     #Paketi{
-        width: 90%;
-        margin: 0 5% 0 3.5%;
-        padding:10px;
-        border:2px solid #edae38;
-    }
-    .Slajd{
-        display: none;
+        width: 95%;
+        margin: 5% 0% 0 2.5%;
+        padding:0;
+        border:none;
     }
     .nazad, .naprijed{
-        position: absolute;
-        padding:10px 15px;
-        margin-top:-25.5%;
-        background-color:#302f2f;
-        border:1px solid black;
-        color:#edae38;
+        padding:5px 7.5px;
+        margin-top:-26%;
     }
     .naprijed{
-        margin:-25.2% 0 0 85%;
+        margin:-26% 0 0 88.3%;
     }
     .baloni, .baloni1{
         margin:-20% 0 0 3%;
-        width:20%;
         z-index: -1;
-        position: absolute;
     }
     .baloni1{
         margin: -20% 0 0 78%;
     }
     #RezervacijaID{
-        position: relative;
-        left:20%;
+        left:0;
     }
     #LijevaStrana{
         float: none;
-        width: 100%;
-        height:230px;
-        margin-left:17%;
+        width: 80%;
+        margin-left:20%;
+        height: 200px;
+        border-right: none;
     }
     #DesnaStrana{
         float:none;
-        width: 100%;
-        margin-left:0;
+        width: 110%;
+        margin-left:6%;
     }
     input, select{
-        display:block;
-        margin-bottom: 0.5%;
-        padding: 7px;
         width: 30%;
     }
     select{
-        width:32.3%;
+        width:34.5%;
     }
     textarea{
-        display:block;
-        width: 30%;
-        margin-top:2%;
+        width: 40%;
+        margin-top:6%;
         padding: 16px 0 40px 10px;
-        position: relative;
-        left:33%;
-        bottom:160px;
+        left:37%;
     }
     .Posalji{
-        width:32%;
-        color:white;
-        background-color:#302f2f;
-        padding:15px;
-        margin-top:1%;
-        border: 2px solid #edae38;
-        position: relative;
-        bottom:160px;
-        left:33%;
+        width:43%;
+        padding:13px;
+        left:37%;
     }
 }
