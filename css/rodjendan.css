@@ -108,7 +108,7 @@ textarea{
         margin:5% 5% 2% 5%;
     }
     .Rezervacije{
-        margin: 2% 10% 2% 9%;
+        margin: 2% 10% 4% 9%;
     }
     header h1{
         font-size:22px;
@@ -134,20 +134,15 @@ textarea{
     .baloni1{
         margin: -20% 0 0 78%;
     }
-    #RezervacijaID{
-        left:0;
-    }
     #LijevaStrana{
-        float: none;
-        width: 80%;
-        margin-left:20%;
-        height: 200px;
+        width: 100%;
         border-right: none;
+        height:0;
     }
     #DesnaStrana{
-        float:none;
-        width: 110%;
-        margin-left:6%;
+        width: 80%;
+        right:20%;
+        padding-top:60%;
     }
     input, select{
         width: 30%;
