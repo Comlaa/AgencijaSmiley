@@ -62,9 +62,10 @@ header, .Rezervacije{
     position: absolute;
     width: 20%;
     border-right: 1px solid #edae38;
-    height:250px;
+    height:200px;
 }
 #DesnaStrana{
+    padding-top:1.5%;
     position: absolute;
     width: 65%;
     right:10%;
@@ -76,13 +77,13 @@ input, select{
     width: 28%;
 }
 select{
-    width:29.3%;
+    width:30%;
 }
 textarea{
     display:block;
     width: 24%;
-    margin-top:1%;
-    padding: 10px 0 40px 10px;
+    margin-top:1.5%;
+    padding: 10px 0 45px 10px;
     position: relative;
     left:31%;
     bottom:160px;
