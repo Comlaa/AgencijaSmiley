@@ -59,6 +59,8 @@ nav{
     padding-bottom:1%;
     font-size:300%;
 }
+
+/* PONUDA --------------------------------------------------------------------------------- */
 #Ponuda{
     background-color: #302f2f;
     padding: 3% 0 3% 0;
@@ -149,6 +151,9 @@ a{
     color:white;
     border: 1px solid white;
 }
+
+/* O NAMA --------------------------------------------------------------------------------- */
+
 #oNama{
     background-color:#302f2f;
     height:100%;
@@ -198,6 +203,8 @@ a{
     padding: 15px 32px;
   }
 
+/* KONTAKT --------------------------------------------------------------------------------- */
+
   #Kontakt
   {
     background-color:#edae38;
@@ -224,8 +231,9 @@ a{
   textarea{
       display:block;
       background-color:#302f2f;
-      border: 2px solid black;
-      width: 92%;
+      border: 0px solid black;
+      width: 1130px;
+      max-width: 94%;
       margin-top:1%;
       padding: 10px 0 40px 0px;
       color:white;
@@ -272,7 +280,8 @@ a{
       text-align: center;
       padding:1%;
   }
-/* Sekcija za PopUp poruke za procitajVise */
+
+/* Sekcija za PopUp poruke za procitajVise ------------------------------------------------------------ */
 .modal{
     position: fixed;
     top:50%;
@@ -326,7 +335,7 @@ a{
 
 
 
-/* ZA MOBILNE UREĐAJE */
+/* ZA MOBILNE UREĐAJE  ------------------------------------------------------- */
 @media screen and (max-width: 800px)
 {
     img{

@@ -1,5 +1,6 @@
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 900
+	speed: 1500,
+	speedAsDuration: true
 });
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
