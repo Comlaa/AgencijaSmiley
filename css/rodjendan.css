@@ -98,14 +98,7 @@ textarea{
     box-sizing: border-box;
 }
 
-div#lijevaFormi {
-    float: left;
-}
 
-div#desnaFormi {
-    float: left;
-    margin-left: 5px;
-}
 
 div#RezervacijaUnutrasnji {
     display: block;
@@ -117,6 +110,16 @@ div#RezervacijaUnutrasnji {
 i.fas.fa-envelope {
     display: inline;
 }
+
+div#lijevaFormi {
+    float: left;
+}
+
+div#desnaFormi {
+    float: left;
+    margin-left: 5px;
+}
+
 /* ZA MOBILNE UREĐAJE */
 
 @media screen and (max-width: 800px) {
@@ -166,6 +169,19 @@ i.fas.fa-envelope {
         margin-top: 5%;
         width: auto;
     }
+	div#lijevaFormi {
+    float: left;
+    width: 100%;
+    padding-right: 5%;
+}
+
+div#desnaFormi {
+    float: left;
+    width: 100%;
+    padding-right: 5%;
+    margin-left: 0;
+}
+
     textarea{
         padding: 16px 0 40px 10px;
     }
