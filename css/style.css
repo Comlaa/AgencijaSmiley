@@ -233,9 +233,9 @@ a{
   textarea{
       display:block;
       background-color:#302f2f;
-      border: 0px solid black;
-      width: 1130px;
-      max-width: 94%;
+      border: 2px solid black;
+      width: 1125px;
+      max-width: 93.5%;
       margin-top:1%;
       padding: 10px 0 40px 0px;
       color:white;

@@ -25,31 +25,43 @@
 
     <h2 class="Rezervacije" style="margin-top:8%">Rezervacije</h2>
     <section id="RezervacijaID">
-        <div id="LijevaStrana">
-            <h2>Kontaktirajte nas</h2><br><br>
-            <h4>Telefon: +387 61 409 770</h4> <br>
-            <a href="https://www.facebook.com/agencijaSmiley/"><h4><i style="padding-right:3%" class="fab fa-facebook-square"></i>Agencija Smiley</h4></a><br>
-            <h4><i style="padding-right:3%" class="fas fa-envelope"></i>agencijasmiley@gmail.com</h4></a>
-        </div>
-        <div id="DesnaStrana">
-            <form action="https://getform.io/f/9aa06ede-7b78-45d3-892c-ff6ee8cd4257" method="POST" id="form">
-                    <input type="text" name="name" placeholder="Unesite ime i prezime" data-parsley-trigger="change" required="">
-                    <input type="email" placeholder="Unesite email" name="email" required="">
-                    <input type="telefon" placeholder="Unesite broj telefona" name="telefon" required="">
-                    <select name="paketi">
-                        <option value="Odaberite Paket">Odaberite ponudu</option>
-                        <option value="osnovnaPonuda">Osnovna ponuda</option>
-                        <option value="Ponuda2">Ponuda 2</option>
-                        <option value="ponuda3">Ponuda 3</option>
-                        <option value="ponuda4">Ponuda 4</option>
-                      </select>
-                      
-                    <textarea type="Poruka" name="Poruka" placeholder="Napomena..." required=""></textarea>
-                    <button type="submit" class="Posalji">Pošalji</button>
-            </form>
+        <div id="RezervacijaUnutrasnji">
+            <div id="LijevaStrana">
+              
+        <div><h2>Kontaktirajte nas</h2><br><br>
+                <h4>Telefon: +387 61 409 770</h4> <br>
+                <a href="https://www.facebook.com/agencijaSmiley/"><h4><i style="padding-right:3%" class="fab fa-facebook-square"></i>Agencija Smiley</h4></a><br>
+                <h4><i style="padding-right:3%" class="fas fa-envelope"></i>agencijasmiley@gmail.com</h4>
         </div>
         
-    </section>
+            </div>
+            <div id="DesnaStrana">
+                <form action="https://getform.io/f/9aa06ede-7b78-45d3-892c-ff6ee8cd4257" method="POST" id="form">
+                        
+        <div id="lijevaFormi">
+        <input type="text" name="name" placeholder="Unesite ime i prezime" data-parsley-trigger="change" required="" style="
+        margin-top: 0px;
+    ">
+        
+                        <input type="email" placeholder="Unesite email" name="email" required="">
+                        <input type="telefon" placeholder="Unesite broj telefona" name="telefon" required="">
+                        <select name="paketi">
+                            <option value="Odaberite Paket">Odaberite ponudu</option>
+                            <option value="osnovnaPonuda">Osnovna ponuda</option>
+                            <option value="Ponuda2">Ponuda 2</option>
+                            <option value="ponuda3">Ponuda 3</option>
+                            <option value="ponuda4">Ponuda 4</option>
+                          </select>
+        </div>
+        
+        <div id="desnaFormi">
+                        <textarea type="Poruka" name="Poruka" placeholder="Napomena..." required=""></textarea>
+            <button type="submit" class="Posalji">Pošalji</button></div>
+                </form>
+            </div>
+        <div style="clear:both;"></div>
+        </div>
+        </section>
     
 
 </body>
